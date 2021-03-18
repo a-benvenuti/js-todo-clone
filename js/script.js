@@ -11,15 +11,15 @@
   $('.to_do_list').append(template);
 
   IMPORTANTE!
-  prima di chiamare la funzione 'clonazione' creare la varbiabile denominata 'variabileContenitoreClonato'
+  prima di chiamare la funzione 'clonazione' creare la varbiabile denominata 'clonedContainer'
 */
-function clonazione(variabileContenitoreClonato, elemCheVoglioClonare, newInfoClonato, doveDeveEssereClonato){
+function clonazione(clonedContainer, toBeCloned, clonedInfo, whereToClone){
   // clono qualsiasi cosa e la metto in una variabile
-  var variabileContenitoreClonato = $(elemCheVoglioClonare).clone();
+  var clonedContainer = $(toBeCloned).clone();
   // aggiungo le info all'elemento che ho clonato
-  variabileContenitoreClonato.prepend(newInfoClonato);
+  clonedContainer.prepend(clonedInfo);
   // aggiungo l'elemento clonato con le nuove info dove voglio
-  $(doveDeveEssereClonato).append(variabileContenitoreClonato);
+  $(whereToClone).append(clonedContainer);
 }
 // ------------------------------------------fine delle FUNZIONI----------------------------------------------
 var elenco = [
