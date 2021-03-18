@@ -1,0 +1,22 @@
+/* ----RESET---- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ----/RESET---- */
+/* ------------------------MIX-------------------- */
+
+/* ------------------------/MIX-------------------- */
+body{
+  font-family: 'Rubik', sans-serif;
+  background-color: #3081ec;
+}
+.wrapper{
+  max-width: 50%;
+  background-color: white;
+  border: 2px solid black;
+}
+.template{
+  display: none;
+}
